@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Mulish', sans-serif;
+
+  /* Brand colors */
+  --color-primary:        #6366f1;
+  --color-primary-dim:    rgba(99,102,241,0.15);
+  --color-primary-border: rgba(99,102,241,0.35);
+
+  /* Surfaces */
+  --color-surface-1: rgba(12, 13, 20, 0.97);
+  --color-surface-2: rgba(20, 22, 34, 0.92);
+  --color-surface-3: rgba(28, 30, 46, 0.88);
+
+  /* Borders */
+  --color-border:     rgba(255,255,255,0.07);
+  --color-border-md:  rgba(255,255,255,0.12);
+
+  /* Text */
+  --color-text-1: #e2e8f0;
+  --color-text-2: #94a3b8;
+  --color-text-3: #475569;
+
+  /* Accent */
+  --color-green:  #4ade80;
+  --color-red:    #f87171;
+  --color-cyan:   #00d4ff;
+
+  --text-1: #ffffff;
+  --text-2: #cbd5e1;
+  --text-3: #94a3b8;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  overflow: hidden;
+  color: var(--color-text-2);
+  font-size: 15px;
+  font-family: 'Mulish', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.chat-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}
+.chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-border);
+}
